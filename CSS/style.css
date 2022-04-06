@@ -24,6 +24,7 @@ header {
   margin-bottom: 1.5%;
   box-shadow: 0px 0px 14px black;
   margin-bottom: 8%;
+  position: sticky;
 }
 nav {
   width: 100%;
@@ -71,6 +72,28 @@ a {
 }
 #burger.fas.fa-bars::before {
   cursor: pointer;
+}
+.icons {
+  position: absolute;
+  font-size: 300px;
+  display: flex;
+  max-width: 400px;
+  right: 200px;
+  display: flex;
+}
+.secondary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  margin-left: 50px;
+}
+.fa-tablet {
+  font-size: 150px;
+  margin-bottom: 30px;
+}
+.fa-laptop {
+  font-size: 100px;
 }
 .info-header {
   width: 43%;
@@ -121,4 +144,10 @@ h2 {
 p {
   color: black;
   font-size: 14px;
+}
+.sub1, .sub2, .sub3 {
+  width: 20%;
+}
+.fa-fa-mobile {
+  justify-content: flex-end;
 }
