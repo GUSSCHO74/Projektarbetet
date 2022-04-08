@@ -78,7 +78,7 @@ a {
   font-size: 300px;
   display: flex;
   max-width: 400px;
-  right: 200px;
+  right: 10%;
   display: flex;
 }
 .secondary {
@@ -116,7 +116,10 @@ a {
   margin-top: 100px;
 }
 .functions {
-  margin-left: 2%;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  background-color: black;
 }
 hr {
   width: 85%;
