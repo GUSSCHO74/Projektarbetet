@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <script
+      src="https://kit.fontawesome.com/229ad52509.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo"><div class="fa-solid fa-check-double"></div></div>
+      <div class="title">PREPPED</div>
+    </header>
+    <div id="signup-container">
+      <div class="signup-header">Sign Up</div>
+      <form>
+        <div id="formContainer">
+          <div class="labels"><label for="email">Email</label></div>
+          <input type="text" placeholder="Enter Email" name="email" required />
+          <div class="labels"><label for="password">Password</label></div>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="password"
+            required
+          />
+          <div class="labels">
+            <label for="repeatPassword">Repeat Password</label>
+          </div>
+          <input
+            type="password"
+            placeholder="Repeat Password"
+            name="repeatPassword"
+            required
+          />
+          <div class="labels">
+            <label
+              ><input type="checkbox" checked="checked" name="remember" />
+              Remember me</label
+            >
+          </div>
+          <p>
+            By creating an account you agree to our
+            <a class="agreement">Terms & Conditions</a>
+          </p>
+          <div class="buttons">
+            <button type="button" class="signup">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

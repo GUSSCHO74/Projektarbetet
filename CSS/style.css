@@ -10,6 +10,7 @@ body {
 .logo {
   margin-left: 2.5%;
   font-size: 24px;
+  color: red;
 }
 .title {
   margin-left: 1%;
@@ -25,15 +26,20 @@ header {
   box-shadow: 0px 0px 14px black;
   margin-bottom: 8%;
   position: sticky;
+  height: 64px;
 }
 nav {
   width: 100%;
   margin-right: 3%;
 }
+.personal {
+  display: flex;
+  justify-content: end;
+  margin-left: auto; 
+}
 .links {
   display: flex;
   list-style-type: none;
-  justify-content: flex-end;
 }
 li {
   margin: 5px;
@@ -153,4 +159,47 @@ p {
 }
 .fa-fa-mobile {
   justify-content: flex-end;
+}
+footer {
+  background-color: rgb(43, 43, 43);
+  height: 80px;
+  margin-top: 100px;
+  color: white;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+#formContainer {
+  padding: 16px;
+  width: 60%;
+  background-color: rgb(29, 29, 29);
+  border-radius: 4px;
+  box-shadow: 0px 0px 8px black;
+  margin-bottom: 150px;
+}
+p {
+  color: white;
+}
+.agreement {
+  color: rgb(0, 247, 255);
+}
+#signup-container {
+  display: flex;
+  justify-content: center; 
+}
+.labels {
+  color: white;
+  padding: 5px 0px 5px 0px;
+}
+.signup-header {
+  font-weight: bold;
+  font-size: 24px;
+}
+input[type="text"],
+input[type="password"] {
+  font-size: 11px;
+  padding: 7px;
+  border: none;
+  display: flex;
+  width: 95%;
 }
