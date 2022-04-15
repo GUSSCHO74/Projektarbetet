@@ -169,6 +169,10 @@ footer {
   display: flex;
   justify-content: center;
 }
+form {
+  display: flex;
+  justify-content: center;
+}
 #formContainer {
   padding: 16px;
   width: 60%;
@@ -177,15 +181,19 @@ footer {
   box-shadow: 0px 0px 8px black;
   margin-bottom: 150px;
 }
-p {
-  color: white;
-}
 .agreement {
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.terms {
   color: rgb(0, 247, 255);
+  background-color: rgb(29, 29, 29);
+  font-size: 11px;
 }
 #signup-container {
-  display: flex;
-  justify-content: center; 
+  text-align: center;
+  margin-bottom: 14px;
 }
 .labels {
   color: white;
@@ -193,7 +201,7 @@ p {
 }
 .signup-header {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 30px;
 }
 input[type="text"],
 input[type="password"] {
@@ -201,5 +209,16 @@ input[type="password"] {
   padding: 7px;
   border: none;
   display: flex;
-  width: 95%;
+  width: 98%;
+}
+button {
+  font-size: 14px;
+  font-weight: bold;
+  background-color: rgb(10, 119, 13);
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
 }
