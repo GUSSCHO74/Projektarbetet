@@ -25,8 +25,7 @@ header {
   align-items: center;
   background-color: rgb(0, 0, 0);
   box-shadow: 0px 0px 14px black;
-  margin-bottom: 6%;
-  position: sticky;
+  margin-bottom: 74px;
   height: 64px;
 }
 nav {
@@ -68,16 +67,6 @@ a {
   #burger {
     display: block;
   }
-  nav {
-    height: 50px;
-  }
-  nav li {
-    display: none;
-  }
-  header {
-    height: 45px;
-    margin-bottom: 3%;
-  }
 }
 #burger.fas.fa-bars::before {
   cursor: pointer;
@@ -110,6 +99,7 @@ a {
   padding: 4px;
   font-weight: bold;
   font-size: 43px;
+  padding-top: 64px;
 }
 .info-text {
   border: 2px black;
@@ -122,7 +112,7 @@ a {
   list-style: none;
   text-align: center;
   display: flex;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .functions {
   font-size: 14px;
@@ -237,9 +227,8 @@ button {
   margin-right: auto;
 }
 .topics {
-  display: flex;
-  flex-direction: column;
+  
 }
 .body, .goals, .planning {
-  
+    
 }
