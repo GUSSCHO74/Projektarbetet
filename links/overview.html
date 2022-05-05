@@ -21,9 +21,29 @@
     <div class="layout">
       <ul>
         <div class="topics">
-          <li class="body">BODY MEASUREMENTS<a href="links/measurements.html"></a></li>
-          <li class="goals">GOALS<a href="links/goals.html"></a></li>
-          <li class="planning">PLANNING<a href="links/planning.html"></a></li>
+          <li class="body"><a href="">BODY MEASUREMENTS</a></li>
+          <div class="body-info">
+            <label class="height" for="measurements">Height:</label>
+            <input
+              type="text"
+              placeholder="Enter height"
+              name="height"
+              required
+            />
+            <label class="weight" for="measurements">Weight:</label>
+            <input
+              type="text"
+              placeholder="Enter weight"
+              name="weight"
+              required
+            />
+            <ul class="unit">Toggle unit
+              <li class="weight-unit">KG / LBS</li>
+              <li class="height-unit">CM / FT</li>
+            </ul>
+          </div>
+          <li class="goals"><a href="">GOALS</a></li>
+          <li class="planning"><a href="">PLANNING</a></li>
         </div>
       </ul>
     </div>
