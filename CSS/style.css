@@ -250,18 +250,23 @@ button {
   color: white;
   font-size: 20px;
   position: absolute;
-  margin-left: 320px;
+  margin-left: 300px;
   margin-top: 15px;
   display: flex;
   flex-direction: row;
 }
 label {
   margin-right: 10px;
+  margin-top: 54px;
 }
 input {
   max-width: 100px;
   max-height: 11px;
   margin-right: 11px;
+  margin-top: 54px;
+}
+.unit {
+  margin-top: 24px;
 }
 .weight-unit, .height-unit {
   background-color: red;
