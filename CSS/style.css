@@ -15,6 +15,7 @@ body {
   margin-left: 1%;
   font-weight: bold;
   font-size: 20px; 
+  margin-top: 2px;
 }
 .fa-solid-fa-check-double {
   color: red;
@@ -27,6 +28,7 @@ header {
   box-shadow: 0px 0px 14px black;
   margin-bottom: 74px;
   height: 64px;
+
 }
 nav {
   width: 100%;
@@ -121,7 +123,7 @@ a {
 .functions {
   font-size: 14px;
   margin-left: 20px;
-  margin-top: 2px;
+  margin-top: 3px;
 }
 hr {
   width: 85%;
@@ -150,21 +152,24 @@ p {
 .sub1, .sub2, .sub3 {
   width: 20%;
 }
+img {
+  width: 100%;
+}
 .fa-fa-mobile {
   justify-content: flex-end;
 }
 .footer {
   background-color: rgb(43, 43, 43);
   height: 200px;
-  margin-top: 100px;
+  margin-top: 300px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: center;
+  margin-bottom: 0;
 }
-.contact1, .contact2, .contact3 {
+li.contact1, li.contact2, li.contact3 {
   width: 20%;
-  color: white;
 }
 form {
   display: flex;
@@ -187,10 +192,6 @@ form {
   background-color: rgb(29, 29, 29);
   font-size: 11px;
 }
-#signup-container {
-  text-align: center;
-  margin-bottom: 14px;
-}
 .labels {
   color: white;
   padding: 5px 0px 5px 0px;
@@ -198,6 +199,9 @@ form {
 .signup-header {
   font-weight: bold;
   font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 100px;
 }
 input[type="text"],
 input[type="password"] {
@@ -205,9 +209,9 @@ input[type="password"] {
   padding: 7px;
   border: none;
   display: flex;
-  width: 98%;
+  width: 94%;
 }
-button {
+.signup-button {
   font-size: 14px;
   font-weight: bold;
   background-color: rgb(10, 119, 13);
@@ -247,30 +251,24 @@ button {
 }
 .body:hover, .goals:hover, .planning:hover {
   font-size: 19px;
-  max-width: 300px;
-  box-shadow: -21px 0px 7px white;
+  box-shadow: -14px 0px 7px white;
 }
 .body-info {
   color: white;
   font-size: 20px;
-  position: absolute;
-  margin-left: 300px;
-  margin-top: 15px;
   display: flex;
-  flex-direction: row;
+  position: absolute;
+  margin-left: 24%;
+  align-items: center;
+  margin-top: 34px;
+  max-width: 700px;
 }
 label {
   margin-right: 10px;
-  margin-top: 54px;
 }
 .height, .weight {
   max-width: 100px;
-  max-height: 11px;
-  margin-right: 11px;
-  margin-top: 54px;
-}
-.unit {
-  margin-top: 24px;
+  margin-right: 54px;
 }
 .weight-unit, .height-unit {
   background-color: red;
@@ -279,4 +277,13 @@ label {
   text-align: center;
   cursor: pointer;
   margin-top: 10px;
+}
+input.height, input.weight {
+  height: 14px;
+}
+iframe{
+  width: 400px; 
+  height: 200px;
+  border: 0;
+  display: flex;
 }

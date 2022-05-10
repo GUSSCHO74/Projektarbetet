@@ -1,59 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Signup</title>
-    <link rel="stylesheet" href="../CSS/style.css" />
-    <script
-      src="https://kit.fontawesome.com/229ad52509.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <a href="../index.html"><div class="fa-solid fa-check-double"></div></a>
-      </div>
-      <div class="title"><a href="../index.html">PREPPED</a></div>
-    </header>
-    <div id="signup-container">
-      <div class="signup-header">Sign Up</div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signup</title>
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <script src="https://kit.fontawesome.com/229ad52509.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="../index.html">
+        <div class="fa-solid fa-check-double"></div>
+      </a>
     </div>
-    <form>
-      <div id="formContainer">
-        <div class="labels"><label for="email">Email</label></div>
-        <input type="text" placeholder="Enter Email" name="email" required />
-        <div class="labels"><label for="password">Password</label></div>
-        <input
-          type="password"
-          placeholder="Enter Password"
-          name="password"
-          required
-        />
-        <div class="labels">
-          <label for="repeatPassword">Repeat Password</label>
+    <div class="title"><a href="../index.html">PREPPED</a></div>
+  </header>
+  <main>
+    <section>
+      <div class="signup-header">Sign Up</div>
+      <form>
+        <div id="formContainer">
+          <div class="labels"><label for="email">Email</label></div>
+          <input onclick="ValidateEmail(document.form1.text1)" type="text" placeholder="Enter Email" name="email"
+            required />
+          <div class="labels"><label for="password">Password</label></div>
+          <input type="password" placeholder="Enter Password" name="password" required />
+          <div class="labels">
+            <label for="repeatPassword">Repeat Password</label>
+          </div>
+          <input type="password" placeholder="Repeat Password" name="repeatPassword" required />
+          <div class="labels">
+            <label><input type="checkbox" checked="checked" name="remember" />
+              Remember me</label>
+          </div>
+          <div class="agreement">
+            By creating an account you agree to our
+            <a class="terms">Terms & Conditions</a>
+          </div>
+          <button class="signup-button">Sign Up</button>
         </div>
-        <input
-          type="password"
-          placeholder="Repeat Password"
-          name="repeatPassword"
-          required
-        />
-        <div class="labels">
-          <label
-            ><input type="checkbox" checked="checked" name="remember" />
-            Remember me</label
-          >
-        </div>
-        <div class="agreement">
-          By creating an account you agree to our
-          <a class="terms">Terms & Conditions</a>
-        </div>
-        <button>Sign Up</button>
-      </div>
-    </form>
-    <script src="app.js"></script>
-  </body>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <ul class="footer">
+      <li class="contact1">
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>Lorem ipsum dolor sit amet et delectus accommodare his consul</p>
+      </li>
+      <li class="contact2">
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>Lorem ipsum dolor sit amet et delectus accommodare his consul</p>
+      </li>
+      <li class="contact3">
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>Lorem ipsum dolor sit amet et delectus accommodare his consul</p>
+      </li>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2485.535413148419!2d18.063720699999998!3d59.44012490000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9b937e97af13%3A0xef984bf2bc386cb7!2s%C3%85va%20gymnasium!5e1!3m2!1sen!2sse!4v1652188485259!5m2!1sen!2sse"></iframe>
+    </ul>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
 </html>
