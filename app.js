@@ -1,16 +1,14 @@
-// email validation
-function ValidateEmail(inputText) {
-  var mailformat = "/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/";
-  if (inputText.value.match(mailformat)) {
-    alert("Valid email address!");
-    document.form1.text1.focus();
-    return true;
+// show text on click --> https://html-shark.com/HTML/ShowHideSections.htm
+
+let shit = false;
+
+function showmyshit() {
+  var height_input = document.getElementById("body-info");
+  if (shit === false) {
+    shit = true;
+    height_input.style.display = "block";
   } else {
-    alert("You have entered an invalid email address!");
-    document.form1.text1.focus();
-    return false;
+    height_input.style.display = "none";
+    shit = false
   }
 }
-
-
-// show text on click --> https://html-shark.com/HTML/ShowHideSections.htm

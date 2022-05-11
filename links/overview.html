@@ -21,36 +21,39 @@
     <main>
       <section>
         <div class="layout">
-          <ul>
             <div class="topics">
-              <li class="body"><a href="">BODY MEASUREMENTS</a></li>
-                <div class="body-info">
-                  <label for="measurements">Height:</label>
-                  <input
-                    class="height"
-                    type="text"
-                    placeholder="Enter height"
-                    name="height"
-                    required
-                  />
-                  <label for="measurements">Weight:</label>
-                  <input
-                    class="weight"
-                    type="text"
-                    placeholder="Enter weight"
-                    name="weight"
-                    required
-                  />
-                  <ul class="unit">
-                    Toggle units
-                    <li class="weight-unit">KG / LBS</li>
-                    <li class="height-unit">CM / FT</li>
-                  </ul>
-                </div>
-              <li class="goals"><a href="">GOALS</a></li>
-              <li class="planning"><a href="">PLANNING</a></li>
+              <ul>
+                <li class="body" onclick="showmyshit()"><a>BODY MEASUREMENTS</a></li>
+                <li class="goals"><a href="">GOALS</a></li>
+                <li class="planning"><a href="">PLANNING</a></li>
+              </ul>
             </div>
           </ul>
+          <div class="infobox">
+            <div id="body-info">
+              <label for="measurements">Height:</label>
+              <input
+                class="height"
+                type="text"
+                placeholder="Enter height"
+                name="height"
+                required
+              />
+              <label for="measurements">Weight:</label>
+              <input
+                class="weight"
+                type="text"
+                placeholder="Enter weight"
+                name="weight"
+                required
+              />
+              <ul class="unit">
+                Toggle units
+                <li class="weight-unit">KG / LBS</li>
+                <li class="height-unit">CM / FT</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -70,6 +73,6 @@
         </li>
       </ul>
     </footer>
-    <script src="app.js"></script>
+    <script src="../app.js"></script>
   </body>
 </html>
