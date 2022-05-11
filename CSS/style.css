@@ -145,6 +145,9 @@ h2 {
   font-weight: bold;
   color: black;
 }
+h3, h4 {
+  color: white;
+}
 p {
   color: black;
   font-size: 14px;
@@ -170,7 +173,6 @@ img {
 }
 li.contact1, li.contact2, li.contact3 {
   width: 20%;
-  color: white;
 }
 form {
   display: flex;
@@ -212,7 +214,7 @@ input[type="password"] {
   display: flex;
   width: 94%;
 }
-.signup-button {
+button {
   font-size: 14px;
   font-weight: bold;
   background-color: rgb(10, 119, 13);
@@ -223,12 +225,14 @@ input[type="password"] {
   width: 100%;
   margin-top: 10px;
 }
-.home {
-  margin-left: 40px;
-  font-size: 14px;
-  background-color: black;
-  color: white;
-  list-style-type: none;
+.overview-title {
+  font-weight: bold;
+  font-size: 5vh;
+  margin-left: 9.5vw;
+  margin-bottom: 1vh;
+  justify-content: end;
+  display: flex;
+  margin-right: 10vw;
 }
 .layout {
   width: 80vw;
@@ -246,13 +250,12 @@ input[type="password"] {
 .body, .goals, .planning {
   border: 2px solid black;
   box-shadow: -11px 0px 7px red;
-  max-width: 220px;
-  padding: 10px 0px 10px 10px;
-  font-size: 17px;   
+  max-width: 21vw;
+  padding: 10px 34px 10px 10px;
+  font-size: 3vh;   
   cursor: pointer;
 }
 .body:hover, .goals:hover, .planning:hover {
-  font-size: 19px;
   box-shadow: -14px 0px 7px white;
 }
 #body-info {
@@ -269,7 +272,6 @@ label {
 }
 ul.unit {
   display: flex;
-  justify-content: end;
   flex-direction: column;
 }
 .weight-unit, .height-unit {
@@ -284,6 +286,7 @@ ul.unit {
 input.height, input.weight {
   height: 14px;
   margin-right: 1vw;
+  padding: 2px 0px 2px 3px;
 }
 iframe{
   width: 400px; 
