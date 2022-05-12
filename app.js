@@ -1,11 +1,12 @@
-let shit = false;
-function showmyshit() {
+let toggle = false;
+function showinfo() {
   var height_input = document.getElementById("body-info");
-  if (shit === false) {
-    shit = true;
+  if (toggle === false) {
+    toggle = true;
     height_input.style.display = "block";
   } else {
     height_input.style.display = "none";
-    shit = false;
+    toggle = false;
   }
 }
+
