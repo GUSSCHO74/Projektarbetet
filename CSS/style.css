@@ -34,14 +34,11 @@ nav {
   width: 100%;
   margin-right: 3%;
 }
-.personal {
-  display: flex;
-  justify-content: end;
-  margin-left: auto;
-}
 .links {
   display: flex;
   align-items: center;
+  justify-content: end;
+  margin-left: auto;
 }
 li {
   margin: 5px;
@@ -69,7 +66,6 @@ a {
 #burger {
   display: none;
 }
-
 #burger.fas.fa-bars::before {
   cursor: pointer;
 }
@@ -273,9 +269,10 @@ label {
 }
 ul.unit {
   text-align: center;
-  display: flex;
+  display:flex;
   flex-direction: column;
   margin-left: 28vw;
+
 }
 .unit-styling {
   background-color: red;
@@ -319,15 +316,33 @@ table {
   justify-content: center;
   margin-top: 15vh;
 }
-.hero {
+.bottom {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4));
+}
+#mobile-links {
+  display: none;
 }
 @media screen and (max-width: 768px) {
   #burger {
     display: block;
+    position: absolute;
+    right: 1rem;
   }
   nav li {
     display: none;
+  }
+  #mobilemenu {
+    display: none;
+    background-color: rgb(72, 72, 72);
+    width: 200vh;
+    margin-top: 46vh;
+  }
+  a {
+    font-size: 4vh;
+  }
+  .account, .login, .signup{
+    font-size: 3vh;
+    background-color: transparent;
   }
   .icons {
     display: none;

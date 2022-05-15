@@ -10,3 +10,16 @@ function showinfo() {
   }
 }
 
+function showmenu() {
+  var mobilemenu = document.getElementById("mobilemenu");
+  var links = document.getElementById("mobile-links");
+  if (toggle === false) {
+    toggle = true;
+    mobilemenu.style.display = "block";
+    links.style.display = "block"
+  } else {
+    toggle = false;
+    mobilemenu.style.display = "none";
+    links.style.display = "none"
+  } 
+}
