@@ -15,7 +15,7 @@ body {
 .title {
   margin-left: 1%;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 4vh;
   margin-top: 2px;
 }
 .fa-solid-fa-check-double {
@@ -48,7 +48,7 @@ li {
 a {
   text-decoration: none;
   color: white;
-  font-size: 17px;
+  font-size: 3vh;
 }
 .account,
 .login,
@@ -113,7 +113,7 @@ a {
   margin-top: 50px;
 }
 .functions {
-  font-size: 14px;
+  font-size: 2vh;
   margin-left: 20px;
   margin-top: 3px;
 }
@@ -335,7 +335,6 @@ table {
     display: none;
     background-color: rgb(72, 72, 72);
     width: 200vh;
-    margin-top: 46vh;
   }
   a {
     font-size: 4vh;
