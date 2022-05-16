@@ -1,4 +1,5 @@
 let toggle = false;
+
 function showinfo() {
   var height_input = document.getElementById("body-info");
   if (toggle === false) {
@@ -13,6 +14,7 @@ function showinfo() {
 function showmenu() {
   var mobilemenu = document.getElementById("mobilemenu");
   var links = document.getElementById("mobile-links");
+  var buttons = document.getElementsByClassName("buttons")
   if (toggle === false) {
     toggle = true;
     mobilemenu.style.display = "block";
