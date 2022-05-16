@@ -337,7 +337,27 @@ table {
     width: 200vh;
   }
   a {
-    font-size: 4vh;
+    font-size: 2vh;
+  }
+  .title {
+    margin-bottom: 1vh;
+  }
+  .functions {
+    margin-top: 0.5vh;
+  }
+  .premium {
+    margin-right: 9vw;
+  }
+  .texts {
+    margin-right: 12vw;
+  }
+  .sub1,
+  .sub2,
+  .sub3 {
+  width: 100%;
+  }
+  .footer {
+    margin-right: 8vw;
   }
   .account, .login, .signup{
     font-size: 3vh;
