@@ -11,32 +11,31 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <!-- https://www.livsmedelsverket.se/om-oss/psidata/livsmedelsdatabasen -->
-
+  <!-- https://www.livsmedelsverket.se/om-oss/psidata/livsmedelsdatabasen API för näringsinnehållslistan-->
   <body>
     <header>
-      <div class="logo">
-        <a href="/html/index.html">
-          <div class="fa-solid fa-check-double"></div>
-        </a>
-      </div>
-      <div class="title"><a href="/html/index.html">PREPPED</a></div>
-      <a class="functions">FUNCTIONS</a>
-      <nav>
-        <ul class="links">
+        <div class="logo">
+          <a href="/html/index.html">
+            <div class="fa-solid fa-check-double"></div>
+          </a>
+        </div>
+        <div class="title"><a href="/html/index.html">PREPPED</a></div>
+        <a class="functions">FUNCTIONS</a>
+        <nav>
+          <ul class="links">
+              <li><a href="/html/links/overview.html" class="buttons">ACCOUNT OVERVIEW</a></li>
+              <li><a class="buttons">LOGIN</a></li>
+              <li><a href="/html/links/signup.html" class="buttons">SIGN UP</a></li>
+            <div id="burger" class="fas fa-bars" onclick="showmenu()"></div>
+          </ul>
+        </nav>
+        <div id="mobilemenu">
+          <ul id="mobile-links">
             <li><a href="/html/links/overview.html" class="buttons">ACCOUNT OVERVIEW</a></li>
             <li><a class="buttons">LOGIN</a></li>
             <li><a href="/html/links/signup.html" class="buttons">SIGN UP</a></li>
-          <div id="burger" class="fas fa-bars" onclick="showmenu()"></div>
-        </ul>
-      </nav>
-      <div id="mobilemenu">
-        <ul id="mobile-links">
-          <li><a href="/html/links/overview.html" class="buttons">ACCOUNT OVERVIEW</a></li>
-          <li><a class="buttons">LOGIN</a></li>
-          <li><a href="/html/links/signup.html" class="buttons">SIGN UP</a></li>
-        </ul>
-      </div>
+          </ul>
+        </div>
     </header>
     <main>
       <section>
@@ -64,7 +63,7 @@
         <div id="company">
           <h1>What is PREPPED?</h1>
           <ul class="texts">
-            <li class="sub1">
+            <li class="paragraph">
               <img
                 src="/images/example.webp"
                 alt="replacement for empty image"
@@ -74,7 +73,7 @@
                 Lorem ipsum dolor sit amet et delectus accommodare his consul
               </p>
             </li>
-            <li class="sub2">
+            <li class="paragraph">
               <img
                 src="/images/example.webp"
                 alt="replacement for empty image"
@@ -84,7 +83,7 @@
                 Lorem ipsum dolor sit amet et delectus accommodare his consul
               </p>
             </li>
-            <li class="sub3">
+            <li class="paragraph">
               <img
                 src="/images/example.webp"
                 alt="replacement for empty image"
@@ -96,51 +95,47 @@
             </li>
           </ul>
         </div>
-        <table>
-          <tr>
-            <th>Lorem</th>
-            <th>Lorem</th>
-            <th>Lorem</th>
-            <th>Lorem</th>
-          </tr>
-          <tr>
-            <td>ipsum</td>
-            <td>ipsum</td>
-            <td>ipsum</td>
-            <td>ipsum</td>
-          </tr>
-          <tr>
-            <td>ipsum</td>
-            <td>ipsum</td>
-            <td>ipsum</td>
-            <td>ipsum</td>
-          </tr>
-        </table>
+        <div class="achievements">OUR ACHIEVEMENTS 
+          <div class="hero-pic">
+            <table>
+              <tr>
+                <th>Lorem</th>
+                <th>Lorem</th>
+                <th>Lorem</th>
+                <th>Lorem</th>
+              </tr>
+              <tr>
+                <td>ipsum</td>
+                <td>ipsum</td>
+                <td>ipsum</td>
+                <td>ipsum</td>
+              </tr>
+              <tr>
+                <td>ipsum</td>
+                <td>ipsum</td>
+                <td>ipsum</td>
+                <td>ipsum</td>
+              </tr>
+            </table>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
-      <div class="bottom">
-        <ul class="footer">
-          <li class="contact1">
-            <h3>Lorem ipsum dolor sit amet</h3>
-            <h4>
-              Lorem ipsum dolor sit amet et delectus accommodare his consul
-            </h4>
-          </li>
-          <li class="contact2">
-            <h3>Lorem ipsum dolor sit amet</h3>
-            <h4>
-              Lorem ipsum dolor sit amet et delectus accommodare his consul
-            </h4>
-          </li>
-          <li class="contact3">
-            <h3>Lorem ipsum dolor sit amet</h3>
-            <h4>
-              Lorem ipsum dolor sit amet et delectus accommodare his consul
-            </h4>
-          </li>
-        </ul>
-      </div>
+      <ul>
+        <li class="footer-text">
+          <h3>Lorem ipsum dolor sit amet</h3>
+          <h4>
+            Lorem ipsum dolor sit amet et delectus accommodare his consul
+          </h4>
+        </li>
+        <li class="footer-text">
+          <h3>Lorem ipsum dolor sit amet</h3>
+          <h4>
+            Lorem ipsum dolor sit amet et delectus accommodare his consul
+          </h4>
+        </li>
+      </ul>
     </footer>
     <script src="/javascript/app.js"></script>
   </body>

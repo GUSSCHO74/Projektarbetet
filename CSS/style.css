@@ -7,6 +7,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 .logo {
   margin-left: 2.5%;
@@ -50,13 +51,26 @@ a {
   color: white;
   font-size: 3vh;
 }
-.buttons,
-.more,
-.premium {
+.buttons, .more, .premium {
   cursor: pointer;
-  background-color: rgb(124, 0, 0);
+  background-color: rgb(154, 0, 0);
   padding: 2px 4px;
   border-radius: 4px;
+}
+.more, .premium {
+  animation: fadeInRight 1.5s;
+}
+.buttons:hover, .more:hover, .premium:hover {
+  background-color: rgb(84, 0, 0);
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+  }
 }
 #burger {
   display: none;
@@ -116,6 +130,7 @@ hr {
   width: 85%;
   margin-top: 74px;
   margin-bottom: 74px;
+  border: 1px solid black;
 }
 h1 {
   display: flex;
@@ -142,31 +157,22 @@ p {
   color: black;
   font-size: 14px;
 }
-.sub1,
-.sub2,
-.sub3 {
-  width: 20%;
-}
 img {
   width: 100%;
 }
 .fa-fa-mobile {
   justify-content: flex-end;
 }
-.footer {
+footer {
   height: 200px;
   margin-top: 20vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: center;
+  flex-direction: column;
   margin-bottom: 0;
-}
-li.contact1,
-li.contact2,
-li.contact3 {
-  width: 20%;
-  margin-right: 4vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4));
 }
 form {
   display: flex;
@@ -199,6 +205,17 @@ form {
   text-align: center;
   margin-bottom: 20px;
   margin-top: 100px;
+  animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 input[type="email"],
 input[type="password"] {
@@ -302,22 +319,29 @@ iframe {
   margin-bottom: 5vh;
   width: 5vw;
 }
-th,
-td {
-  border: 1px solid black;
+th,td {
+  border: 2px solid white;
+  color: white;
 }
 table {
   display: flex;
   justify-content: center;
-  margin-top: 15vh;
-}
-.bottom {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4));
+  margin-top: 2vh;
+  padding: 5vh 0vh 5vh 0vh;
 }
 #mobile-links {
   display: none;
 }
 @media screen and (max-width: 768px) {
+  th, td {
+    font-size: 1.5vh;
+  }
+  .paragraph {
+    margin-left: 6vw;
+  }
+  img {
+    width: 50%;    
+  }
   li.options {
     max-width: 46vw;
   }
@@ -360,27 +384,12 @@ table {
   .texts {
     margin-right: 12vw;
   }
-  .sub1,
-  .sub2,
-  .sub3 {
-  width: 100%;
-  }
-  .footer {
-    margin-right: 8vw;
-  }
-  .wallah {
-    font-size: 3vh;
-    background-color: transparent;
-  }
   .icons {
     display: none;
   }
   ul.texts {
     flex-direction: column;
     align-items: center;
-  }
-  .contact3 {
-    display: none;
   }
   .info-header {
     margin-right: auto;
@@ -390,4 +399,24 @@ table {
   .extra {
     justify-content: center;
   }
+}
+/* .background {
+  background-image: url(/images/background.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+}  */
+.hero-pic {
+  background-image:url(/images/trophy.jpg);
+  opacity: 1;
+  box-shadow: 0vh 2vh 3vh black;
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.achievements {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10vh;
+  font-size: 4vh;
 }
