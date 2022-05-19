@@ -206,6 +206,7 @@ form {
   margin-bottom: 20px;
   margin-top: 100px;
   animation: fadeIn 1s;
+  color: white;
 }
 @keyframes fadeIn {
   from {
@@ -255,7 +256,7 @@ button {
   display: flex;
   align-items: center;
 }
-.topics {
+#topics {
   display: flex;
   flex-direction: column;
 }
@@ -272,19 +273,15 @@ button {
 }
 #body-info {
   color: white;
-  font-size: 20px;
+  font-size: 4vh;
   display: none;
 }
 label {
   margin-top: 2vh;
   margin-bottom: 0.5vh;
 }
-ul.unit {
-  text-align: center;
-  display:flex;
-  flex-direction: column;
-  margin-left: 28vw;
-
+.footer-info {
+  margin-right: 3vw;
 }
 .unit-styling {
   background-color: red;
@@ -297,7 +294,7 @@ ul.unit {
 }
 input.height,
 input.weight {
-  height: 14px;
+  height: 2vh;
   margin-right: 1vw;
   padding: 2px 0px 2px 3px;
   width: 11vw;
@@ -308,20 +305,19 @@ iframe {
   border: 0;
   display: flex;
 }
-.infobox {
-  display: flex;
-  align-items: center;
+.unit {
+  margin-left: 35vw;
 }
 .inputs {
-  display: flex;
-  flex-direction: column;
-  margin-left: 7vw;
-  margin-bottom: 5vh;
-  width: 5vw;
+  margin-left: 2vw;
+  margin-top: 7vh;
 }
-th,td {
+th, td {
   border: 2px solid white;
   color: white;
+}
+td {
+  font-size: 2vh;
 }
 table {
   display: flex;
@@ -333,11 +329,31 @@ table {
   display: none;
 }
 @media screen and (max-width: 768px) {
-  th, td {
+  .unit-styling {
+    width: 20vw;
+  }
+  .unit {
+    align-content: center;
+  }
+  .overview-title {
+    font-size: 3.5vh;
+    justify-content: center;
+  }
+  input.height,
+  input.weight {
+    width: 20vw; 
+  }
+  #body-info {
+    font-size: 2vh;
+  }
+  th {
     font-size: 1.5vh;
   }
+  td {
+    font-size: 1vh;
+  }
   .paragraph {
-    margin-left: 6vw;
+    margin-left: 3vw;
   }
   img {
     width: 50%;    
@@ -368,6 +384,9 @@ table {
   }
   .buttons {
     font-size: 4vh;
+    background-color: transparent;
+    font-size: 3vh;
+    width: 10vw;
   }
   a {
     font-size: 2vh;
@@ -400,11 +419,11 @@ table {
     justify-content: center;
   }
 }
-/* .background {
+.background {
   background-image: url(/images/background.jpg);
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: cover;
-}  */
+} 
 .hero-pic {
   background-image:url(/images/trophy.jpg);
   opacity: 1;
@@ -414,7 +433,7 @@ table {
   margin-left: auto;
   margin-right: auto;
 }
-.achievements {
+.hero-text {
   text-align: center;
   font-weight: bold;
   margin-top: 10vh;
