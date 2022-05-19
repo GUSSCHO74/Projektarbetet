@@ -329,6 +329,9 @@ table {
   display: none;
 }
 @media screen and (max-width: 768px) {
+  .footer-info {
+    margin-right: 10vw;
+  }
   .unit-styling {
     width: 20vw;
   }
