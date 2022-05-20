@@ -7,10 +7,7 @@ function showinfo() {
     toggle = true;
     height_input.style.display = "block";
     topics.style.display = "none"
-  } else {
-    height_input.style.display = "none";
-    toggle = false;
-  }
+  } 
 }
 
 function showmenu() {
@@ -20,5 +17,5 @@ function showmenu() {
     toggle = true;
     mobilemenu.style.display = "block";
     links.style.display = "block"
-  }
+  } 
 }
