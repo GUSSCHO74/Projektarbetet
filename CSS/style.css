@@ -79,7 +79,7 @@ a {
 }
 .icons {
   position: absolute;
-  font-size: 30vh;
+  font-size: 24vh;
   display: flex;
   right: 10%;
   align-items: center;
@@ -159,7 +159,7 @@ img {
   justify-content: flex-end;
 }
 footer {
-  height: 200px;
+  height: 43vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -167,6 +167,9 @@ footer {
   flex-direction: column;
   margin-bottom: 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4));
+  color: white;
+  font-weight: bold;
+  border-top: 2px solid black;
 }
 form {
   display: flex;
@@ -278,6 +281,7 @@ label {
 }
 .footer-info {
   margin-right: 3vw;
+  display: flex;
 }
 .unit-styling {
   background-color: red;
@@ -296,10 +300,9 @@ input.weight {
   width: 11vw;
 }
 iframe {
-  width: 84vw;
-  height: 230vh;
+  width: 74vw;
+  height: 21vh;
   border: 0;
-  padding: 10vw;
 }
 .unit {
   margin-left: 35vw;
@@ -326,6 +329,7 @@ table {
   display: none;
 }
 @media screen and (max-width: 768px) {
+  
   .logo {
     margin-left: 5%;
   }
@@ -384,6 +388,11 @@ table {
     display: flex;
     text-align: center;
     margin-right: 5vw;
+    margin-top: 10vh;
+    padding-top: 7vh;
+  }
+  li {
+    font-weight: bold;  
   }
   .buttons {
     font-size: 4vh;
