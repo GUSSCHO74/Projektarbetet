@@ -28,7 +28,6 @@ header {
   align-items: center;
   background-color: rgb(0, 0, 0);
   box-shadow: 0px 0px 14px black;
-  margin-bottom: 74px;
   height: 64px;
 }
 nav {
@@ -84,6 +83,7 @@ a {
   display: flex;
   right: 10%;
   align-items: center;
+  margin-top: 11vh;
 }
 .secondary {
   display: flex;
@@ -120,11 +120,6 @@ a {
   text-align: center;
   display: flex;
   margin-top: 50px;
-}
-.functions {
-  font-size: 2vh;
-  margin-left: 20px;
-  margin-top: 1vh;
 }
 hr {
   width: 85%;
@@ -165,7 +160,6 @@ img {
 }
 footer {
   height: 200px;
-  margin-top: 20vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -184,6 +178,7 @@ form {
   background-color: rgb(29, 29, 29);
   border-radius: 4px;
   box-shadow: 0px 0px 8px black;
+  margin-bottom: 20vh;
 }
 .agreement {
   color: white;
@@ -204,7 +199,6 @@ form {
   font-size: 30px;
   text-align: center;
   margin-bottom: 20px;
-  margin-top: 100px;
   animation: fadeIn 1s;
   color: white;
 }
@@ -229,16 +223,13 @@ input[type="password"] {
 button {
   font-size: 14px;
   font-weight: bold;
-  background-color: red;
+  background-color: rgb(10, 119, 13);
   color: white;
   padding: 14px 20px;
   border: none;
   cursor: pointer;
   width: 100%;
   margin-top: 10px;
-}
-button:hover {
-  background-color: rgb(10, 119, 13)
 }
 .overview-title {
   font-weight: bold;
@@ -248,6 +239,7 @@ button:hover {
   justify-content: end;
   display: flex;
   margin-right: 10vw;
+  margin-top: 11vh;
 }
 .layout {
   width: 80vw;
@@ -258,6 +250,7 @@ button:hover {
   margin-right: auto;
   display: flex;
   align-items: center;
+  margin-bottom: 20vh;
 }
 #topics {
   display: flex;
@@ -303,10 +296,10 @@ input.weight {
   width: 11vw;
 }
 iframe {
-  width: 400px;
-  height: 200px;
+  width: 84vw;
+  height: 230vh;
   border: 0;
-  display: flex;
+  padding: 10vw;
 }
 .unit {
   margin-left: 35vw;
@@ -327,11 +320,15 @@ table {
   justify-content: center;
   margin-top: 2vh;
   padding: 5vh 0vh 5vh 0vh;
+  margin-bottom: 20vh;
 }
 #mobile-links {
   display: none;
 }
 @media screen and (max-width: 768px) {
+  .logo {
+    margin-left: 5%;
+  }
   .footer-info {
     margin-right: 10vw;
   }
@@ -400,9 +397,6 @@ table {
   .title {
     margin-bottom: 1vh;
   }
-  .functions {
-    margin-top: 0.5vh;
-  }
   .premium {
     margin-right: 9vw;
   }
@@ -429,6 +423,7 @@ table {
   background-image: url(/images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 11vh;
 } 
 .hero-pic {
   background-image:url(/images/trophy.jpg);
