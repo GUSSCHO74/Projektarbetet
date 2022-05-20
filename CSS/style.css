@@ -175,7 +175,7 @@ form {
   display: flex;
   justify-content: center;
 }
-#formContainer {
+.formContainer {
   padding: 16px;
   width: 60%;
   background-color: rgb(29, 29, 29);
