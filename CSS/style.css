@@ -329,7 +329,6 @@ table {
   display: none;
 }
 @media screen and (max-width: 768px) {
-  
   .logo {
     margin-left: 5%;
   }
